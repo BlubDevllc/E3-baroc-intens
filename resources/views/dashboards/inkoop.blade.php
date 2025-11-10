@@ -7,14 +7,14 @@
             <p class="text-gray-600">Beheer voorraad, leveranciers en bestellingen</p>
         </div>
         <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg">
-            ➕ Bestelling Plaatsen
+             Bestelling Plaatsen
         </button>
     </div>
 
     {{-- Inventory Alerts --}}
     <div class="bg-red-50 border border-red-200 rounded-lg p-4">
         <div class="flex items-start gap-3">
-            <span class="text-xl">⚠️</span>
+            <span class="text-xl"></span>
             <div>
                 <h3 class="font-semibold text-red-900">Lage Voorraad Waarschuwing</h3>
                 <p class="text-sm text-red-700">Er zijn 5 producten met kritisch lage voorraad. Bestel snel om tekorten te voorkomen.</p>

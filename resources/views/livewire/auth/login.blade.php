@@ -33,6 +33,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         $user = $this->validateCredentials();
 
+        // Check if user has 2FA enabled (optioneel - alleen als je 2FA verplicht wilt maken later)
         if (Features::canManageTwoFactorAuthentication() && $user->hasEnabledTwoFactorAuthentication()) {
             Session::put([
                 'login.id' => $user->getKey(),
@@ -48,6 +49,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         RateLimiter::clear($this->throttleKey());
         Session::regenerate();
+
+        // Als user geen 2FA heeft, toon waarschuwing
+        if (!$user->two_factor_secret) {
+            Session::flash('show_2fa_reminder', true);
+        }
 
         $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
     }

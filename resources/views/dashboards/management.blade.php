@@ -7,8 +7,8 @@
             <p class="text-gray-600">Bedrijfsapplicatie - Algemeen overzicht</p>
         </div>
         <div class="flex items-center gap-2">
-            <span class="text-sm text-gray-600">🔔</span>
-            <span class="text-sm text-gray-600">👤</span>
+            <span class="text-sm text-gray-600"></span>
+            <span class="text-sm text-gray-600"></span>
         </div>
     </div>
 

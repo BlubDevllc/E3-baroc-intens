@@ -7,7 +7,7 @@
             <p class="text-gray-600">Beheer facturen, betalingen en financiële overzichten</p>
         </div>
         <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg">
-            📄 Genereer Factuur
+         Genereer Factuur
         </button>
     </div>
 
