@@ -1,14 +1,29 @@
 <x-layouts.app :title="__('Dashboard')">
-    <div class="flex h-full w-full flex-1 flex-col gap-6 rounded-xl">
-        {{-- Welkom Header --}}
-        <div class="rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 p-6">
-            <h1 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-                Welkom, {{ Auth::user()->name }}! 
-            </h1>
-            <p class="mt-2 text-neutral-600 dark:text-neutral-400">
-                Je bent succesvol ingelogd op het Barroc Intens dashboard.
-            </p>
-        </div>
+    @php
+        $userRole = Auth::user()->role ?? 'employee';
+    @endphp
+
+    @if($userRole === 'management')
+        @include('dashboards.management')
+    @elseif($userRole === 'sales')
+        @include('dashboards.sales')
+    @elseif($userRole === 'inkoop')
+        @include('dashboards.inkoop')
+    @elseif($userRole === 'finance')
+        @include('dashboards.finance')
+    @elseif($userRole === 'onderhoud' || $userRole === 'planning')
+        @include('dashboards.onderhoud')
+    @else
+        {{-- Default Dashboard --}}
+        <div class="flex h-full w-full flex-1 flex-col gap-6 rounded-xl p-6">
+            <div class="rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 p-6">
+                <h1 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+                    Welkom, {{ Auth::user()->name }}! 
+                </h1>
+                <p class="mt-2 text-neutral-600 dark:text-neutral-400">
+                    Je bent succesvol ingelogd op het Barroc Intens dashboard.
+                </p>
+            </div>
 
         {{-- Dashboard Cards --}}
         <div class="grid auto-rows-min gap-4 md:grid-cols-3">
@@ -83,5 +98,6 @@
                 </p>
             </div>
         </div>
-    </div>
+        </div>
+    @endif
 </x-layouts.app>
