@@ -3,14 +3,27 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
+/**
+ * Database Seeder
+ * 
+ * Vult de database met test gebruikers voor alle afdelingen.
+ * Alle test accounts gebruiken het wachtwoord: Password123!
+ */
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Seed de applicatie database.
+     * 
+     * Creëert test gebruikers voor:
+     * - Management
+     * - Sales
+     * - Inkoop
+     * - Financiën
+     * - Onderhoud
+     * - Planning
      */
     public function run(): void
     {

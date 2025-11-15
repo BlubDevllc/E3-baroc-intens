@@ -8,15 +8,17 @@ use Illuminate\Validation\Rules\Password;
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Registreer applicatie services.
      */
     public function register(): void
     {
-        //
+        // Geen services om te registreren
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap applicatie services.
+     * 
+     * Configureert password validatie regels volgens beveiligingseisen.
      */
     public function boot(): void
     {

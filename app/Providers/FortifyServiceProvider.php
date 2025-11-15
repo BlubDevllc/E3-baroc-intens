@@ -11,15 +11,17 @@ use Laravel\Fortify\Fortify;
 class FortifyServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Registreer applicatie services.
      */
     public function register(): void
     {
-        //
+        // Geen services om te registreren
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap applicatie services.
+     * 
+     * Configureert Fortify views en rate limiting voor authenticatie.
      */
     public function boot(): void
     {

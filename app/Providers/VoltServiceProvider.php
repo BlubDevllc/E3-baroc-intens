@@ -8,15 +8,17 @@ use Livewire\Volt\Volt;
 class VoltServiceProvider extends ServiceProvider
 {
     /**
-     * Register services.
+     * Registreer Volt services.
      */
     public function register(): void
     {
-        //
+        // Geen services om te registreren
     }
 
     /**
-     * Bootstrap services.
+     * Bootstrap Volt services.
+     * 
+     * Mount Volt directories voor single-file Livewire componenten.
      */
     public function boot(): void
     {

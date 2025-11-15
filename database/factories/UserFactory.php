@@ -12,12 +12,14 @@ use Illuminate\Support\Str;
 class UserFactory extends Factory
 {
     /**
-     * The current password being used by the factory.
+     * Het huidige wachtwoord gebruikt door de factory.
      */
     protected static ?string $password;
 
     /**
-     * Define the model's default state.
+     * Definieer de standaard staat van het model.
+     * 
+     * Genereert een gebruiker met basis authenticatie en 2FA instellingen.
      *
      * @return array<string, mixed>
      */
@@ -36,7 +38,9 @@ class UserFactory extends Factory
     }
 
     /**
-     * Indicate that the model's email address should be unverified.
+     * Geef aan dat het email adres van de gebruiker niet geverifieerd is.
+     * 
+     * @return static
      */
     public function unverified(): static
     {
@@ -46,7 +50,9 @@ class UserFactory extends Factory
     }
 
     /**
-     * Indicate that the model does not have two-factor authentication configured.
+     * Geef aan dat de gebruiker geen two-factor authentication heeft ingesteld.
+     * 
+     * @return static
      */
     public function withoutTwoFactor(): static
     {
