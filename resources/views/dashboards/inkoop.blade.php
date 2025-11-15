@@ -7,14 +7,13 @@
             <p class="text-gray-600">Beheer voorraad, leveranciers en bestellingen</p>
         </div>
         <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg">
-             Bestelling Plaatsen
+            Bestelling Plaatsen
         </button>
     </div>
 
     {{-- Inventory Alerts --}}
     <div class="bg-red-50 border border-red-200 rounded-lg p-4">
         <div class="flex items-start gap-3">
-            <span class="text-xl"></span>
             <div>
                 <h3 class="font-semibold text-red-900">Lage Voorraad Waarschuwing</h3>
                 <p class="text-sm text-red-700">Er zijn 5 producten met kritisch lage voorraad. Bestel snel om tekorten te voorkomen.</p>
@@ -59,15 +58,15 @@
                                 <td class="px-4 py-3 text-sm text-gray-600">{{ $item['min'] }}</td>
                                 <td class="px-4 py-3">
                                     @if($item['status'] === 'ok')
-                                        <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-700">✓ OK</span>
+                                        <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-700">OK</span>
                                     @elseif($item['status'] === 'low')
-                                        <span class="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700">⚠ Laag</span>
+                                        <span class="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700">Laag</span>
                                     @else
-                                        <span class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-700">✖ Kritiek</span>
+                                        <span class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-700">Kritiek</span>
                                     @endif
                                 </td>
                                 <td class="px-4 py-3">
-                                    <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Bestellen →</button>
+                                    <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Bestellen</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -103,7 +102,7 @@
                             @else
                                 <span class="px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-700">{{ $order['status'] }}</span>
                             @endif
-                            <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Details →</button>
+                            <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Details</button>
                         </div>
                     </div>
                 @endforeach

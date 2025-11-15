@@ -17,12 +17,12 @@
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Leads</div>
             <div class="text-2xl font-bold text-gray-900 mt-1">124</div>
-            <div class="text-xs text-green-600 mt-1">↑ 12% vs vorige maand</div>
+            <div class="text-xs text-green-600 mt-1">+12% vs vorige maand</div>
         </div>
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Offertes</div>
             <div class="text-2xl font-bold text-gray-900 mt-1">89</div>
-            <div class="text-xs text-green-600 mt-1">↑ 8% vs vorige maand</div>
+            <div class="text-xs text-green-600 mt-1">+8% vs vorige maand</div>
         </div>
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Inkooporders</div>
@@ -32,7 +32,7 @@
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Facturen</div>
             <div class="text-2xl font-bold text-gray-900 mt-1">156</div>
-            <div class="text-xs text-red-600 mt-1">↓ 3% vs vorige maand</div>
+            <div class="text-xs text-red-600 mt-1">-3% vs vorige maand</div>
         </div>
     </div>
 

@@ -7,7 +7,7 @@
             <p class="text-gray-600">Beheer van klanten, offertes en verkoop</p>
         </div>
         <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg">
-             Nieuwe Klant
+            Nieuwe Klant
         </button>
     </div>
 
@@ -16,17 +16,17 @@
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Open Leads</div>
             <div class="text-2xl font-bold text-gray-900 mt-1">28</div>
-            <div class="text-xs text-blue-600 mt-1">→ 12 nieuw deze week</div>
+            <div class="text-xs text-blue-600 mt-1">12 nieuw deze week</div>
         </div>
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Actieve Offertes</div>
             <div class="text-2xl font-bold text-gray-900 mt-1">15</div>
-            <div class="text-xs text-yellow-600 mt-1"> 8 wachten op antwoord</div>
+            <div class="text-xs text-yellow-600 mt-1">8 wachten op antwoord</div>
         </div>
         <div class="bg-white rounded-lg border border-gray-200 p-4">
             <div class="text-sm text-gray-600">Conversie Ratio</div>
             <div class="text-2xl font-bold text-gray-900 mt-1">68%</div>
-            <div class="text-xs text-green-600 mt-1">↑ +5% deze maand</div>
+            <div class="text-xs text-green-600 mt-1">+5% deze maand</div>
         </div>
     </div>
 
@@ -97,7 +97,7 @@
                                     </span>
                                 </td>
                                 <td class="px-4 py-3">
-                                    <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Bekijken →</button>
+                                    <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Bekijken</button>
                                 </td>
                             </tr>
                         @endforeach

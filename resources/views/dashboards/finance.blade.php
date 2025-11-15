@@ -7,7 +7,7 @@
             <p class="text-gray-600">Beheer facturen, betalingen en financiële overzichten</p>
         </div>
         <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg">
-         Genereer Factuur
+            Genereer Factuur
         </button>
     </div>
 
@@ -45,7 +45,7 @@
                 <div class="w-full bg-gray-200 rounded-full h-2">
                     <div class="bg-green-500 h-2 rounded-full" style="width: 65%"></div>
                 </div>
-                <div class="text-xs text-green-600 mt-1">↑ +12% vs vorige maand</div>
+                <div class="text-xs text-green-600 mt-1">+12% vs vorige maand</div>
             </div>
         </div>
     </div>
@@ -92,7 +92,7 @@
                                     @endif
                                 </td>
                                 <td class="px-4 py-3">
-                                    <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Bekijken →</button>
+                                    <button class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">Bekijken</button>
                                 </td>
                             </tr>
                         @endforeach

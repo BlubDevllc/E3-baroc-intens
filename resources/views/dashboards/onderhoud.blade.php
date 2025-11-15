@@ -7,14 +7,13 @@
             <p class="text-gray-600">Beheer onderhoudsopdrachten en planning</p>
         </div>
         <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg">
-             Rapport Inplannen
+            Rapport Inplannen
         </button>
     </div>
 
     {{-- Urgent Alerts --}}
     <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
         <div class="flex items-start gap-3">
-            <span class="text-xl">🔧</span>
             <div>
                 <h3 class="font-semibold text-orange-900">Spoedopdrachten</h3>
                 <p class="text-sm text-orange-700">Je hebt 2 spoedopdrachten die vandaag nog afgehandeld moeten worden.</p>
@@ -78,7 +77,7 @@
                             @else
                                 <span class="px-3 py-1 text-sm rounded-full bg-green-100 text-green-700">Bevestigd</span>
                             @endif
-                            <button class="p-2 hover:bg-gray-100 rounded">→</button>
+                            <button class="p-2 hover:bg-gray-100 rounded text-sm font-medium">Details</button>
                         </div>
                     </div>
                 @endforeach
@@ -94,7 +93,6 @@
             <div class="space-y-4">
                 <div class="p-3 bg-blue-50 rounded-lg">
                     <div class="flex items-start gap-2">
-                        <span class="text-blue-600"></span>
                         <div>
                             <div class="font-medium text-blue-900">Teammeeting</div>
                             <div class="text-sm text-blue-700">Morgen, 09:00 - Kantoor</div>
@@ -103,7 +101,6 @@
                 </div>
                 <div class="p-3 bg-green-50 rounded-lg">
                     <div class="flex items-start gap-2">
-                        <span class="text-green-600">✓</span>
                         <div>
                             <div class="font-medium text-green-900">Training voltooid</div>
                             <div class="text-sm text-green-700">Nieuwe espressomachine - Certificaat ontvangen</div>
@@ -112,7 +109,6 @@
                 </div>
                 <div class="p-3 bg-yellow-50 rounded-lg">
                     <div class="flex items-start gap-2">
-                        <span class="text-yellow-600"></span>
                         <div>
                             <div class="font-medium text-yellow-900">Deadline nadert</div>
                             <div class="text-sm text-yellow-700">Onderhoudscertificaten updaten voor 15 nov</div>
@@ -165,9 +161,9 @@
         <h3 class="text-lg font-semibold text-gray-900 mb-4">Afgeronde Opdrachten</h3>
         <div class="space-y-2">
             @foreach([
-                ['client' => 'Espresso Bar', 'type' => 'Onderhoud', 'date' => '2025-11-08', 'rating' => '⭐⭐⭐⭐⭐'],
-                ['client' => 'Café Amsterdam', 'type' => 'Reparatie', 'date' => '2025-11-07', 'rating' => '⭐⭐⭐⭐'],
-                ['client' => 'Koffiehuis', 'type' => 'Installatie', 'date' => '2025-11-05', 'rating' => '⭐⭐⭐⭐⭐']
+                ['client' => 'Espresso Bar', 'type' => 'Onderhoud', 'date' => '2025-11-08', 'rating' => '5/5'],
+                ['client' => 'Café Amsterdam', 'type' => 'Reparatie', 'date' => '2025-11-07', 'rating' => '4/5'],
+                ['client' => 'Koffiehuis', 'type' => 'Installatie', 'date' => '2025-11-05', 'rating' => '5/5']
             ] as $completed)
                 <div class="flex items-center justify-between p-3 border-b hover:bg-gray-50">
                     <div>
