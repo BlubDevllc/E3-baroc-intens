@@ -167,6 +167,13 @@ new #[Layout('components.layouts.auth')] class extends Component {
         </button>
     </form>
 
+    <!-- Wachtwoord Vergeten Link -->
+    <div class="text-center">
+        <a href="{{ route('password.request') }}" wire:navigate class="text-sm text-gray-600 hover:text-yellow-600 transition">
+            Wachtwoord vergeten?
+        </a>
+    </div>
+
     <!-- Demo Accounts Sectie -->
     <div class="mt-4">
         <p class="text-center text-sm text-gray-600 mb-3">Demo accounts (gebruik elk wachtwoord):</p>
